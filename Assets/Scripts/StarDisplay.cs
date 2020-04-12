@@ -20,6 +20,10 @@ public class StarDisplay : MonoBehaviour
     private void UpdateDisplay(){
       starText.text =stars.ToString();// change the text in this text object to the int at the top
     }
+
+    public bool HaveEnoughStars(int amount){
+      return stars >= amount;//returns true if the interger at the top stars is greater than or equal to amount
+    }
 public void AddStars(int amount){
   stars += amount;
   UpdateDisplay();
